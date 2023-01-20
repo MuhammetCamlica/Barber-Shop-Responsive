@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awsome/4.7.0/css/font-awsome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="banner">
+      <img src="img/logo.png" class="logo" />
+      <div class="banner-text">
+        <h1 class="">Hair Studio</h1>
+        <p>Sakal, Erkeğin Makyajıdır.</p>
+        <div class="banner-btn">
+          <a href="#"><span></span>Radevu Al</a>
+          <a href="#"><span></span>Hakkımızda</a>
+        </div>
+      </div>
+    </section>
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#">Neden biz</a></li>
+          <li><a href="#">Hizmetler</a></li>
+          <li><a href="#">İletşim</a></li>
+          <li><a href="#">Öneri</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuBtn">
+      <img src="img/menu.png" id="menu" />
+    </div>
+
+    <!--Features-->
+
+    <section id="feature">
+      <div class="title-text">
+        <h1>Neden Bizi Seçmelisiniz</h1>
+      </div>
+      <div class="feature-box">
+        <div class="features">
+          <h1>Deneyimli Personel</h1>
+          <div class="features-desc">
+            <div class="feature-icon"></div>
+            <div class="feature-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                ex perferendis laborum nisi rem.
+              </p>
+            </div>
+          </div>
+
+          <h1>Online Rezervasyon</h1>
+          <div class="features-desc">
+            <div class="feature-icon"></div>
+            <div class="feature-text">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aliquid, adipisci pariatur sed esse sunt aliquam qui dignissimos
+                nemo, quibusdam cupiditate deserunt!
+              </p>
+            </div>
+          </div>
+
+          <h1>Uygun Maliyet</h1>
+          <div class="features-desc">
+            <div class="feature-icon"></div>
+            <div class="feature-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="features-img">
+          <img src="img/barberman.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+      var sideNav = document.getElementById("sideNav");
+      var menu = document.getElementById("menu");
+
+      sideNav.style.right = "-250px";
+
+      menuBtn.onclick = function () {
+        if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0";
+          menu.src = "img/close.png";
+        } else {
+          sideNav.style.right = "-250px";
+          menu.src = "img/menu.png";
+        }
+      };
+    </script>
+
+    <!--Features-->
+
+    <section id="services">
+      <div class="service-title-text">
+        <h1>Hizmetler</h1>
+      </div>
+
+      <div class="service-box">
+        <div class="single-service">
+          <img src="img/pic-1.jpg" />
+          <div class="overlay"></div>
+          <div class="service-desc">
+            <h3>Katlı Kesim</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa in
+              quaerat ut, veritatis molestias sapiente incidunt quia fugit
+              suscipit aperiam ab cum!
+            </p>
+          </div>
+        </div>
+
+        <div class="single-service">
+          <img src="img/pic-2.jpg" />
+          <div class="overlay"></div>
+          <div class="service-desc">
+            <h3>Sakal Çizim</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium, ipsum corporis explicabo quis praesentium debitis
+              temporibus nam ex reiciendis qui sit, maiores delectus?
+            </p>
+          </div>
+        </div>
+
+        <div class="single-service">
+          <img src="img/pic-3.jpg" />
+          <div class="overlay"></div>
+          <div class="service-desc">
+            <h3>Kalıcı Fön</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+              architecto distinctio nam animi quisquam quas cumque modi soluta
+              velit voluptas doloribus culpa odit obcaecati aut.
+            </p>
+          </div>
+        </div>
+
+        <div class="single-service">
+          <img src="img/pic-4.jpg" />
+          <div class="overlay"></div>
+          <div class="service-desc">
+            <h3>Saç Boyamam</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+              sequi illum provident nemo necessitatibus aspernatur nostrum odio
+              tenetur nobis enim!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Referans-->
+
+    <section id="testimonail">
+      <div class="test-title-text">
+        <h1>Referans</h1>
+      </div>
+
+      <div class="testimonial-row">
+        <div class="testimonial-col">
+          <div class="user">
+            <img src="img/img-1.jpg"/>
+            <div class="user-info">
+              <h4>Yasin Çamlıca</h4>
+              <small>@yasncamlica</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            earum, cumque nesciunt, eius veniam dignissimos maxime hic dolorum
+            id aliquid eum, voluptas architecto illum iusto! Sed quos eius, id
+            sapiente cum dolore a nulla architecto!
+          </p>
+        </div>
+
+        <div class="testimonial-col">
+          <div class="user">
+            <img src="img/img-2.jpg"/>
+            <div class="user-info">
+              <h4>Ayşe Topçu</h4>
+              <small>@ayse_topcu</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            earum, cumque nesciunt, eius veniam dignissimos maxime hic dolorum
+            id aliquid eum, voluptas architecto illum iusto! Sed quos eius, id
+            sapiente cum dolore a nulla architecto!
+          </p>
+        </div>
+
+        <div class="testimonial-col">
+          <div class="user">
+            <img src="img/img-3.jpg"/>
+            <div class="user-info">
+              <h4>Emirhan Gül</h4>
+              <small>@Emirhan60</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            earum, cumque nesciunt, eius veniam dignissimos maxime hic dolorum
+            id aliquid eum, voluptas architecto illum iusto! Sed quos eius, id
+            sapiente cum dolore a nulla architecto!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <section id="footer">
+      <div class="footer-title-text">
+        <h1>Hakkımızda</h1>
+      </div>
+      <div class="footer-row">
+        <div class="footer-left">
+          <h1>Açılış Saati</h1>
+          <p>Pazartesi-cuma : 09:00 - 20:30</p>
+          <p>Cumartesi/Pazar : 10:00 - 18:00</p>
+        </div>
+        <div class="footer-right">
+          <h1>Traş'a başlama</h1>
+          <p>Bükreş, Romanya</p>
+        </div>
+      </div>
+
+
+
+
+
+    </section>
+  </body>
+</html>
